@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">Registration </h2>
+
+    <form action="Thankyou.html" method="get">
+
+        <table border="1" align="center" cellpadding="5">
+
+            <tr>
+                <td>User ID</td>
+                <td>
+                    <input type="hidden" name="userid" value="1001">
+                </td>
+            </tr>
+
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="firstname"
+                    pattern="[A-Za-z]+" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="lastname"
+                    pattern="[A-Za-z]+" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&amp;*]).{8,}"
+                    title="At least 8 characters, one uppercase, one lowercase, one number and one special character"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Repeat Password</td>
+                <td>
+                    <input type="password" name="repeatpassword" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>User Picture</td>
+                <td>
+                    <input type="file" name="picture" accept="image/*">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required>
+                    Male
+
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Faculty</td>
+                <td>
+                    <select name="faculty" required>
+                        <option value="">Select Faculty</option>
+                        <option value="Computers and Information">
+                            Computers and Information
+                        </option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Medicine">Medicine</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Interests</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Choose your interests</td>
+                <td>
+                    <input type="checkbox" name="interests"
+                    value="Swimming"> Swimming
+
+                    <input type="checkbox" name="interests"
+                    value="Reading"> Reading
+
+                    <input type="checkbox" name="interests"
+                    value="Programming"> Programming
+
+                    <input type="checkbox" name="interests"
+                    value="Sports"> Sports
+                </td>
+            </tr>
+
+            <tr>
+                <td>About You</td>
+                <td>
+                    <textarea name="about" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td>
+                    <input type="tel" name="phone"
+                    pattern="01[0125][0-9]{8}"
+                    title="Enter a valid Egyptian phone number (11 digits)"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>GPA</td>
+                <td>
+                    <input type="number" name="gpa"
+                    min="0" max="4" step="0.1" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date" name="dob" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="checkbox" name="terms" required>
+                    <label>
+                        I agreed to the
+                        <a href="Terms.html" target="_blank">
+                            terms and conditions
+                        </a>
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
